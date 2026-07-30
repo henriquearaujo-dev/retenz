@@ -1,5 +1,15 @@
 # 🚀 Retenz.app — Plataforma de Fidelidade & Retenção B2B (Micro-SaaS)
 
+[![Node.js](https://img.shields.io/badge/Node.js-v20.x-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-v5.x-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![NestJS](https://img.shields.io/badge/NestJS-v10.x-E0234E?style=flat-square&logo=nestjs&logoColor=white)](https://nestjs.com/)
+[![React](https://img.shields.io/badge/React-v18.x-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-v16.x-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Docker](https://img.shields.io/badge/Docker-Supported-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+
+---
+
 > **Solução B2B para redução de churn em PMEs através de automação de programas de recompensa e retenção de clientes.**
 
 ---
@@ -51,12 +61,12 @@ Pequenos e médios comércios enfrentam **alta taxa de rotatividade de clientes 
 
 - [x] Testes unitários de Use Cases e Regras de Negócio com Jest.
 - [x] Testes de integração (E2E) para rotas críticas de pontuação e autenticação.
-- [ ] _[Em andamento]_ Job assíncrono para expiração automática de pontos inativos.
+- [x] _[Em andamento]_ Job assíncrono para expiração automática de pontos inativos.
 
 ### **5. Expansão & Integrações**
 
-- [ ] _[Backlog]_ Webhooks de notificação via WhatsApp API para atualização de saldo.
-- [ ] _[Backlog]_ Dashboard com gráficos de frequência de compra e taxa de retorno.
+- [x] _[Backlog]_ Webhooks de notificação via WhatsApp API para atualização de saldo.
+- [x] _[Backlog]_ Dashboard com gráficos de frequência de compra e taxa de retorno.
 
 ---
 
