@@ -9,6 +9,8 @@ import {
   Post,
 } from '@nestjs/common';
 import { TenantService } from './tenant.service';
+import { CreateTentantDto } from './dto/create-tenant.dto';
+import { UpdateTentantDto } from './dto/update-tenant.dto';
 
 @Controller('tenant')
 export class TenantController {
@@ -25,13 +27,16 @@ export class TenantController {
   }
 
   @Post()
-  create(@Body() body: string) {
-    return this.tenantService.create(body);
+  create(@Body() createTenantDto: CreateTentantDto) {
+    return this.tenantService.create(createTenantDto);
   }
 
   @Patch(':id')
-  update(@Param('id', ParseUUIDPipe) id: string, @Body() body: string) {
-    return this.tenantService.update(id, body);
+  update(
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() updateTenantDto: UpdateTentantDto,
+  ) {
+    return this.tenantService.update(id, updateTenantDto);
   }
 
   @Delete(':id')
