@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import Joi from 'joi';
-import { TenantModule } from './modules/tenant/tenant.module';
+import { MerchantModule } from './modules/tenant/merchant.module';
 
 @Module({
   imports: [
@@ -31,7 +31,7 @@ import { TenantModule } from './modules/tenant/tenant.module';
         synchronize: process.env.NODE_ENV !== 'production',
       }),
     }),
-    TenantModule,
+    MerchantModule,
   ],
   controllers: [],
   providers: [],

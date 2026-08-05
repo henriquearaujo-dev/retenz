@@ -9,8 +9,8 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity('tenants')
-export class Tenant {
+@Entity('merchants')
+export class Merchant {
   @PrimaryGeneratedColumn('uuid')
   id!: string;
 
